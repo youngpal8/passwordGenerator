@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/passwordGenerator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <button type="button" id="togglePassword">Show</button>
+          </div>
+          <p class="generate-password-text" id="generatePassword">
+            Generate a password
+          </p>
+  
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="closePopup">&times;</span>
+          <p>Generated Password: <span id="generatedPassword"></span></p>
+        </div>
+      </div>
+    
+
+    <script src="script/passwordGenerator.js"></script>
+</body>
+</html>
